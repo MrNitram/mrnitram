@@ -14,18 +14,18 @@
 # remote_theme           : "mmistakes/minimal-mistakes"
 # remote_theme: "mmistakes/minimal-mistakes@4.19.2"
 remote_theme: benbalter/retlab
-minimal_mistakes_skin    : "aqua" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-GB"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Your Name"
 description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+# url                      : "https://mrnitram.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# baseurl                  : "/mrnitram" # the subpath of your site, e.g. "/blog"
+repository               : "mrnitram/mrnitram" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -103,7 +103,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -274,7 +274,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "2019-12-27-welcome-to-jekyll.markdown"
       type: posts
     values:
       layout: single
@@ -283,3 +283,10 @@ defaults:
       comments: # true
       share: true
       related: true
+        # _pages
+  - scope:
+      path: "404.html"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
